@@ -1,0 +1,21 @@
+<?jelly escape-by-default='true'?>
+
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form" >
+    <f:entry title="DUT" field="deviceId">
+        <f:textbox />
+    </f:entry>
+    <f:entry title="Package Publisher" field="appPublisher">
+        <f:select />
+    </f:entry>
+    <f:entry title="Package Name" field="appName">
+        <f:select />
+    </f:entry>
+    <f:entry title="Package Version" field="appVersion">
+        <f:select />
+    </f:entry>
+    <f:advanced>
+        <f:entry title="Package Must Be Stopped" field="stopApp">
+            <f:checkbox />
+        </f:entry>
+    </f:advanced>
+</j:jelly>
